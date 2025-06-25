@@ -1,12 +1,9 @@
 # Stock Volatility Profiler
+![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
+![yfinance](https://img.shields.io/badge/yfinance-0.2.63-orange.svg)  
 Swift stock analysis using Polars (soon)
 
-## Setup
-
-### Prerequisites
-- Python 3.8 or higher
-
-### Installation
+## Installation
 1. **Clone the repository**
    ```bash 
    git clone https://github.com/louisfarouk/stock-volatility-profiler.git
@@ -38,9 +35,6 @@ python scripts/fetch_stock_data.py --ticker MSFT
 
 # Fully customised
 python scripts/fetch_stock_data.py --ticker NVDA --start 2023-01-01 --end 2024-01-01 --output-dir data/my_stocks
-
-# Short form
-python scripts/fetch_stock_data.py -t AMZN -s 2022-01-01 -e 2023-12-31 -o data/tech_stocks
 ```
 
 #### Command-Line Options
@@ -71,4 +65,4 @@ Downloaded stock data includes:
 - Volume
 
 ## Dependencies
-- **yfinance**: Yahoo Finance data fetching
+- [**yfinance**](https://github.com/ranaroussi/yfinance): Yahoo Finance data fetching
