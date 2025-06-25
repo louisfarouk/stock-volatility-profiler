@@ -1,5 +1,5 @@
 # Stock Volatility Profiler
-Swift stock analysis using Polars (soon).
+Swift stock analysis using Polars (soon)
 
 ## Setup
 
@@ -28,10 +28,8 @@ Swift stock analysis using Polars (soon).
 
 ### Fetching Stock Data
 
-#### Default Sample Data
 Default sample data for AAPL, GOOGL, and HSBA.L is available in `data/sample_data/`.
 
-#### Custom Stock Data
 Fetch data for any ticker with command-line arguments:
 
 ```bash
@@ -46,7 +44,7 @@ python scripts/fetch_stock_data.py -t AMZN -s 2022-01-01 -e 2023-12-31 -o data/t
 ```
 
 #### Command-Line Options
-```bash
+```
 -t, --ticker      Stock ticker symbol (e.g., AAPL, GOOGL)
 -s, --start       Start date in YYYY-MM-DD format (default: 2020-01-01)
 -e, --end         End date in YYYY-MM-DD format (default: 2024-01-01)
