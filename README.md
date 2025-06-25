@@ -1,7 +1,7 @@
 # Stock Volatility Profiler
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 ![yfinance](https://img.shields.io/badge/yfinance-0.2.63-orange.svg)
-![Polars](https://img.shields.io/badge/Polars-1.31.0-green.svg)
+![Polars](https://img.shields.io/badge/Polars-1.31.0-green.svg)  
 Swift stock analysis using Polars
 
 ## Installation
