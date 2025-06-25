@@ -1,7 +1,8 @@
 # Stock Volatility Profiler
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
-![yfinance](https://img.shields.io/badge/yfinance-0.2.63-orange.svg)  
-Swift stock analysis using Polars (soon)
+![yfinance](https://img.shields.io/badge/yfinance-0.2.63-orange.svg)
+![Polars](https://img.shields.io/badge/Polars-1.31.0-green.svg)
+Swift stock analysis using Polars
 
 ## Installation
 1. **Clone the repository**
@@ -48,21 +49,24 @@ python scripts/fetch_stock_data.py --ticker NVDA --start 2023-01-01 --end 2024-0
 ## Project Structure
 ```
 stock-volatility-profiler/
+├── app/
+│   └── data_loader.py
 ├── data/
 │   ├── sample_data/    # Pre-configured sample data
 │   └── custom/         # User-requested custom data
 ├── scripts/
 │   └── fetch_stock_data.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── test_single_loader.py
 ```
 
 ## Data Format
 Downloaded stock data includes:
 - Date
 - Open, High, Low, Close prices
-- Adjusted Close price
 - Volume
 
 ## Dependencies
 - [**yfinance**](https://github.com/ranaroussi/yfinance): Yahoo Finance data fetching
+- [**Polars**](https://github.com/pola-rs/polars): Super-fast DataFrames

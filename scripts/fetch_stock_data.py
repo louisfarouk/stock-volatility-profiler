@@ -11,7 +11,7 @@ logging.basicConfig(
 
 def fetch_stock_data(ticker: str, start: str, end: str, save_path: Path):
     """
-    Fetch stock data from Yahoo Finance and save it to a CSV file.
+    Fetch stock data from Yahoo Finance and saves it to a CSV file.
 
     ticker: Stock ticker symbol (e.g., 'AAPL' for Apple Inc.)
     start: Start date in 'YYYY-MM-DD' format
