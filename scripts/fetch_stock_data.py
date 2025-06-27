@@ -38,13 +38,13 @@ def main():
     parser.add_argument('--ticker', '-t', type=str, help='Stock ticker symbol (e.g., AAPL, GOOGL)')
     parser.add_argument('--start', '-s', type=str, default='2020-01-01', help='Start date (YYYY-MM-DD)')
     parser.add_argument('--end', '-e', type=str, default='2024-01-01', help='End date (YYYY-MM-DD)')
-    parser.add_argument('--output-dir', '-o', type=str, default='data/custom', help='Output directory')
+    parser.add_argument('--output-dir', '-o', type=str, default='custom', help='Output directory within data/')
     
     args = parser.parse_args()
     
     if args.ticker:
         # User-sought data
-        output_path = Path(args.output_dir) / f"{args.ticker.lower()}_stock_data.csv"
+        output_path = Path("data") / args.output_dir / f"{args.ticker.lower()}_stock_data.csv"
         fetch_stock_data(
             ticker=args.ticker,
             start=args.start,

@@ -71,7 +71,7 @@ Fetch data for any ticker with command-line arguments:
 python scripts/fetch_stock_data.py --ticker MSFT
 
 # Fully customised
-python scripts/fetch_stock_data.py --ticker NVDA --start 2023-01-01 --end 2024-01-01 --output-dir data/my_stocks
+python scripts/fetch_stock_data.py --ticker NVDA --start 2023-01-01 --end 2024-01-01 --output-dir my_stocks
 ```
 
 #### Command-Line Options
@@ -79,7 +79,7 @@ python scripts/fetch_stock_data.py --ticker NVDA --start 2023-01-01 --end 2024-0
 -t, --ticker      Stock ticker symbol (e.g., AAPL, GOOGL)
 -s, --start       Start date in YYYY-MM-DD format (default: 2020-01-01)
 -e, --end         End date in YYYY-MM-DD format (default: 2024-01-01)
--o, --output-dir  Output directory (default: data/custom)
+-o, --output-dir  Output directory within data/ (default: custom)
 ```
 
 ## 📁 Project Structure
