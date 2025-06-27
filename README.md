@@ -1,8 +1,15 @@
 # Stock Volatility Profiler
-![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
-![yfinance](https://img.shields.io/badge/yfinance-0.2.63-orange.svg)
-![Polars](https://img.shields.io/badge/Polars-1.31.0-green.svg)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![yfinance](https://img.shields.io/badge/yfinance-0.2.63-orange.svg)](https://github.com/ranaroussi/yfinance)
+[![Polars](https://img.shields.io/badge/Polars-1.31.0-green.svg)](https://github.com/pola-rs/polars)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 Swift stock analysis using Polars
+
+## Features
+- **Fast Analysis**: Polars-powered data processing
+- **Comprehensive Metrics**: Volatility, returns, price ranges, performance
+- **Rich Visualisations**: Price trends, volatility charts, returns distribution
+- **Flexible Input**: Single files or entire directories
 
 ## Installation
 1. **Clone the repository**
@@ -23,6 +30,29 @@ Swift stock analysis using Polars
    ```
 
 ## Usage
+
+### Stock Analysis & Visualisation
+
+Run analysis and visualisation using stock_volatility_profiler.py:
+
+```bash
+# Analyze stock data
+python stock_volatility_profiler.py analyse sample_data
+
+# Create visualisations
+python stock_volatility_profiler.py visualise sample_data
+
+# Both analysis and visualisation
+python stock_volatility_profiler.py both sample_data
+
+# Single file analysis
+python stock_volatility_profiler.py analyse sample_data/aapl_stock_data.csv
+```
+
+#### Commands
+- `analyse` - Generate summary statistics, volatility metrics, and performance analysis
+- `visualise` - Create price trends, volatility, returns distribution, and volume charts
+- `both` - Run both analysis and visualization
 
 ### Fetching Stock Data
 
@@ -50,15 +80,17 @@ python scripts/fetch_stock_data.py --ticker NVDA --start 2023-01-01 --end 2024-0
 ```
 stock-volatility-profiler/
 ├── app/
-│   └── data_loader.py
+│   ├── data_loader.py            # Data loading
+│   ├── analyser.py               # Stock analysis
+│   └── visualiser.py             # Visualisation
 ├── data/
-│   ├── sample_data/    # Pre-configured sample data
-│   └── custom/         # User-requested custom data
+│   ├── sample_data/              # Pre-configured sample data
+│   └── custom/                   # User-requested custom data
 ├── scripts/
 │   └── fetch_stock_data.py
+├── stock_volatility_profiler.py  # Main application
 ├── requirements.txt
-├── README.md
-└── test_single_loader.py
+└── README.md
 ```
 
 ## Data Format
@@ -70,3 +102,9 @@ Downloaded stock data includes:
 ## Dependencies
 - [**yfinance**](https://github.com/ranaroussi/yfinance): Yahoo Finance data fetching
 - [**Polars**](https://github.com/pola-rs/polars): Super-fast DataFrames
+- [**matplotlib**](https://matplotlib.org/): Plotting and visualisation
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Disclaimer**: This project is not affiliated with Yahoo, Inc. Stock data is retrieved using the yfinance library for research and educational purposes. Please refer to Yahoo's terms of use for data usage rights.
