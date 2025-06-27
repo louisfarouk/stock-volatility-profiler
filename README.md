@@ -1,17 +1,23 @@
+<div align="center">
+
 # Stock Volatility Profiler
+
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![yfinance](https://img.shields.io/badge/yfinance-0.2.63-orange.svg)](https://github.com/ranaroussi/yfinance)
 [![Polars](https://img.shields.io/badge/Polars-1.31.0-green.svg)](https://github.com/pola-rs/polars)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-Swift stock analysis using Polars
 
-## Features
-- **Fast Analysis**: Polars-powered data processing
-- **Comprehensive Metrics**: Volatility, returns, price ranges, performance
-- **Rich Visualisations**: Price trends, volatility charts, returns distribution
-- **Flexible Input**: Single files or entire directories
+*Swift stock analysis using Polars*
 
-## Installation
+</div>
+
+## 📊 Features
+- ⚡ **Fast Analysis**: Polars-powered data processing
+- 📈 **Comprehensive Metrics**: Volatility, returns, price ranges, performance
+- 🎯 **Rich Visualisations**: Price trends, volatility charts, returns distribution
+- ⚙️ **Flexible Input**: Single files or entire directories
+
+## 🔧 Installation
 1. **Clone the repository**
    ```bash 
    git clone https://github.com/louisfarouk/stock-volatility-profiler.git
@@ -29,7 +35,7 @@ Swift stock analysis using Polars
    pip install -r requirements.txt
    ```
 
-## Usage
+## 💻 Usage
 
 ### Stock Analysis & Visualisation
 
@@ -76,7 +82,7 @@ python scripts/fetch_stock_data.py --ticker NVDA --start 2023-01-01 --end 2024-0
 -o, --output-dir  Output directory (default: data/custom)
 ```
 
-## Project Structure
+## 📁 Project Structure
 ```
 stock-volatility-profiler/
 ├── app/
@@ -93,18 +99,26 @@ stock-volatility-profiler/
 └── README.md
 ```
 
-## Data Format
-Downloaded stock data includes:
+## 🔍 Data Format
+
+### Input Data
 - Date
 - Open, High, Low, Close prices
 - Volume
+- Ticker symbol
 
-## Dependencies
+### Analysis Output
+- **Summary Statistics**: Min/Max/Average prices, volatility, trading volume
+- **Volatility Analysis**: Rolling volatility calculations
+- **Price Range Analysis**: Daily price ranges and movements
+- **Performance Metrics**: Period returns and price changes
+
+## 📋 Dependencies
 - [**yfinance**](https://github.com/ranaroussi/yfinance): Yahoo Finance data fetching
 - [**Polars**](https://github.com/pola-rs/polars): Super-fast DataFrames
 - [**matplotlib**](https://matplotlib.org/): Plotting and visualisation
 
-## License
+## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Disclaimer**: This project is not affiliated with Yahoo, Inc. Stock data is retrieved using the yfinance library for research and educational purposes. Please refer to Yahoo's terms of use for data usage rights.
